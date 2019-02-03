@@ -1,0 +1,1736 @@
+\documentclass[a4paper,12pt]{article}
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % ATTENTION : dans les figures le label doit être mis 
+%APRES le caption pour que le numéro de la figure lorqu'on
+%la référence soit le bon ; sinon on a le numéro du paragraphe
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+% package qui fournit \justify 
+\usepackage[document]{ragged2e}
+\usepackage{eurosym}
+
+%pifont pour les puces de formes spéciales
+\usepackage{pifont}
+\usepackage[table]{xcolor}
+\usepackage{tabu}
+% césure exemple
+% \hyphenation{an-ti-cons-ti-tu-tion-nel
+
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[frenchb]{babel} % If you write in French
+%\usepackage[english]{babel} % If you write in English
+\usepackage{lmodern} % Pour changer le pack de police
+\renewcommand*\familydefault{\sfdefault}
+\usepackage{makeidx}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{stmaryrd}
+\usepackage{geometry}
+%\usepackage{graphicx}
+\usepackage{graphbox}
+\usepackage{supertabular}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{pdflscape}
+\geometry{hmargin=2cm,vmargin=2cm}
+
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\usepackage{ltablex}
+\usepackage{float}
+\usepackage{url}
+
+\usepackage{chngcntr}
+\counterwithin*{footnote}{page}
+
+
+\usepackage[titletoc,toc,title,page]{appendix}
+\renewcommand{\appendixtocname}{Annexes}
+\renewcommand{\appendixpagename}{Annexes}
+
+\usepackage{standalone}
+\usepackage{ifthen}
+\usepackage{xstring}
+\usepackage{calc}
+\usepackage{pgfopts}
+\usepackage{tikz}
+\usetikzlibrary{positioning,shapes,shadows,arrows}
+%\usepackage{array,ragged2e}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\makeatletter
+\renewcommand{\ALG@name}{Algorithme}
+\renewcommand{\listalgorithmname}{Table des algorithmes}
+
+\newtheorem{theo}{Définition}[section]
+\usepackage{mathtools, bm}
+\usepackage{amssymb, bm}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=black,       % color of internal links
+    citecolor=purple,       % color of links to bibliography
+    urlcolor=blue          % color of external links
+}
+
+\usepackage{listings}
+
+\definecolor{dkgreen}{rgb}{0,.6,0}
+\definecolor{dkblue}{rgb}{0,0,.6}
+\definecolor{dkyellow}{cmyk}{0,0,.8,.3}
+
+\lstset{
+  language        = php,
+  basicstyle      = \small\ttfamily,
+  keywordstyle    = \color{dkblue},
+  stringstyle     = \color{red},
+  identifierstyle = \color{dkgreen},
+  commentstyle    = \color{gray},
+  emph            =[1]{php},
+  emphstyle       =[1]\color{black},
+  emph            =[2]{if,and,or,else},
+  emphstyle       =[2]\color{dkyellow}}
+
+
+
+\usepackage{blindtext}
+\usepackage{enumitem} % pour changer les puces dans \itemize
+
+
+\date{\today}
+
+\makeindex
+\def\siecle#1{\textsc{\romannumeral #1}\textsuperscript{e}}
+\newcommand{\argmax}{\mathop{\mathrm{argmax}}\nolimits}
+\newcommand{\pgcd}{\mathop{\mathrm{pgcd}}\nolimits}
+
+\makeatletter
+\renewcommand{\pod}[1]{\allowbreak\mathchoice
+  {\if@display \mkern 18mu\else \mkern 8mu\fi (#1)}
+  {\if@display \mkern 18mu\else \mkern 8mu\fi (#1)}
+  {\mkern4mu(#1)}
+  {\mkern4mu(#1)}
+}
+
+\usepackage{wallpaper}
+%\usepackage{bsymb,b2latex}
+
+\begin{document}
+\renewcommand{\labelitemi}{\textbullet}
+% pour factoriser l'échelle des figures 
+%utilisation scale=\scaledvwa au lieu de scale = 0.3 ... 
+%\newcommand{\scaledvwa}{0.4} 
+%\newcommand{\scaledvw}{0.3}
+%\newcommand{\scalekad}{0.45}
+
+\input{page-de-couverture/couv.tex}%on créé la couverture
+
+\pagebreak
+
+\tableofcontents
+\justify
+\pagebreak
+
+%\section*{Introduction}
+%\addcontentsline{toc}{section}{Introduction}
+\section{Introduction}
+
+Entreprise sur 4 pattes : commerce, productio; n, gestion financière, RH
+entreprises évoluent dans un milieu difficile
+ex 1 : Compagnie aériennes après le 11 sept, ne survivent pas à 15 jours sans traffic. => 
+aide de l'état.
+
+ex 2 : Tesla OBJECTIF DU NBR DE VOITURES	NON ATTEINT 
+
+
+\section{Finalité de l'entreprise}
+
+\subsection{L'entreprise est une ORGANISATION} 
+
+3/4 SONT DES entreprises de service.
+
+service : marchand : entreprise qui vend, edf vend appartient à l'état.
+
+si non vendu : justice, jugement non vendue
+
+
+finalité de l'entreprise : le profit, vendre plus cher que  ce que ça coûte.
+là pour gagner de l'argent.
+
+
+orga qui ne devraint pas être des entreprise: CNTS : centre nat de tranfu sanguine qui était une entreprise.
+lots de sang contaminés : produits chauffés aux états unis + cher.
+utilisation des stocks sur les déjà contaminés car ne coûte "rien".
+ya des choses qui ne sont pas là pour gagner de l'argent.
+
+ex : des  orphelinas
+
+
+ex : train sncf non rentable car infra chere avec peu de trains, non profitables mais utiles,
+en géné publiques et subventionnées.
+
+
+ 
+
+\subsection{profit = produit - charges}
+
+
+
+achat, services ext, frais de personnel, ammortissment, frais finanaciers, impôts.
+
+
+airfrance achat d'un A320 : voiture qui vaut 10000€
+un invest n'est pas une dépense ; changement de forme de dépense.
+la dépense est dans l'usure et l'obsolescence.
+
+chaque année l'A320 perd de sa valeur : 100M => dépense 0 val immobilisée
+chaque années on dit que perd 5 ou 10\% de  sa valeur. apparaissent comme des charges annuelles.
+
+
+\subsection{chiffre d'affaire}
+somme des ventes;
+
+airbus baisse ses prix de 1/3, prend tous les clients de boeing, CA monte jusqu'à la faillite ! vente à perte.
+
+louer des choses,
+produits de placements
+
+demler benz : placements qui permet de payer son dividende
+
+si ya perspective de profit, on achète l'action.
+ 
+si non rentable, le banquier vous lâche.
+
+si très rentable : arnaque aux fournisseurs et aux clients, et au personnel, les impôts.
+
+les entreprises délai de paiement, si client fait faillite, pas payé.
+un impayé est svt une source de faillite.
+
+plus l'entreprise va bien, plus le fournisseur peut être arnaqué.
+
+qd le client s'apercoit prod trop cher, achat moins cher mais pas de garantie.
+
+
+fusion entre égaux : boa qui dit au lapin, pb alimentaire = "fusion entre égaux".
+
+plus grand agence de pub : avas-publicis se pacs avec omnicom agence pub USA.
+fusion 1 an pour mettre en commun. 
+
+montage financier : si pas possible d'identifier le pigeon, le pigeons c'est vous.
+la fusion a été abandonnée par avas car ils ne savaient pas en quoi omnicom était pigeonné.
+
+
+entreprise trop rentable devient une proie. prise de contrôle.
+autonomie : argent des autres.
+
+
+LA croissance doit être financée, si pas rentable pas de croissance.
+
+une entreprise qui gagne de l'argent, entreprise qui irrigue son environnment,
+si rentable, gens bien payés, beaux bureau, restau d'affaires, embauche, payer normalement 
+des impots.
+
+une entreprise non profitable coûte à son environnement.
+
+
+\section{structure juridique}
+\subsection{ entreprise individuelle}
+ n'existe pas. existe uniquement le statut d'entrepreneur individuel.
+pas de création d'une entité individuel : microentreprise, auto entrepreneur, formulaire sur internet.
+l'entreprise indiv c'est quelqu'un.
+
+ex : rodolphe qui fait de l'événementielle, achat matos, cameras, voiture
+crédit : 70 k€
+
+compte en banque : débit crédit tout rentre ou sort de son compte en banque
+confusion juridique complete entre son patrimoine pro et perso. même si plusieurs compte.
+travail ds sa maison.
+
+si conjoncture muavaise : gilets jaunes, CD ne se vendent plus, ne peut plus payé
+ses mensualités d'emprunt ; perte du bénéfice du terme i.e. pret pour 5 ans, ne peut changer le terme
+si ne paie pas à temps, banque peut demander de tout rembourser tout de suite.
+=> saisie du patrimoine : le kangoo, la maison, ...
+la banque saisi la maison valueur 300 000 mais mise à pris 50 000. agent immobilier avec entente entre eux pour se répartir les bonnes affaires. enchere montent mais uniquement à 120 000. on verse le restant de la somme.
+mauvais plan.
+
+donc pas de séparation entre patrimoine de rodolphe et l'entreprise : risque d'être ruiné.
+
+l'entreprneur inidviduel ou autoentrepreneur pourra déclarer chez le notaire et mettre la maion
+comme insaisissable.
+mais banque demande la maison en caution.
+
+DONC PAS UNE BONNE IDEE DE CREER UNE ENTREPRISE INDIVIDUELLE
+\subsection{entreprise sociétaire}
+
+
+CR2ATION d'une société : num d'immat, propriétaire de ses dettes 
+
+le créateur est proprio de part de l'entreprise : 5 ou 10\%
+
+
+société commerciales ou non une SCI n'est pas commerciale, ou medecin cabinet en commun
+
+on parle ici de sociétés qui sont des entreprises.
+
+
+A RETENIR LA SARL ET LA SA
+
+\subsection{SàRL}
+société à responsabilité limitée : nb d'associés  de 2 à 100
+petite boite mais une grosse boite peut être en SA mais rare.
+
+ne pas confondre ASSOCIES qui travaillent ds l'entreprise ET  EMPLOYES :
+possiblité d'avoir 100 associé et 0 employés.
+
+entreprise de 50 personnes SARL : petite camionnette
+
+capital social : argent mis à la création d'un entreprise equ à la DOT = cadeau = don
+non dormant.
+
+ 
+si on ne trouve pas d'argent c que idée mauvaise. si on en trouve pas 7500€
+si idée génial et capa de travail, on trouve des investisseurs.
+si idée bonne si pas 7500 c que vous êtes nuls.
+donc ne créez pas d'entreprise.
+
+toutes les entreprises qui démarrent avec un capital faible ont une vie
+
+loi dutrelle : sarl à capital variable, création d'une sarl 1€ par associés.
+on pourra trouver un capital après d'ou le terme capital variable.
+
+
+si idée bonne, et vous êtes bon, pas les moyens de déposerr un brevet de le protéger
+enregistrer un modèle, design.
+
+IL FAUT DONC DEMMARRER AVEC UN CAPITAL
+
+IS : proportionnel 1/3
+imp sur revenu progressif car seuil à aprtir duquel on commence à payer.
+
+10 à part égale, 30 000 chacun, 300 000 euros réparties sur 10 personne non imposable.
+
+gros benef : IS car en impot sur le revenu c plus cher
+petit benef comme 300 000 sur 10 asscoié plus intéressa	nts.
+
+dirigeant d'une sarl c'est un gérant pas un PDG
+
+majoritaire : + de la moitié des parts sociales. de l'entreprise, PAS D'ACTION DANS UNE SARL
+
+gérant nommé par une majorité, nommé par les autres probablement minoritaire alors
+on est salarié.
+
+EN FRANCE? IL VAUT MIEUX ETRE SALARIE;
+mais si j'ai 75\% je suis majoritaire et donc non salarié.
+
+on est propriétaire de parts sociales = fraction capital sociel de 7500 75 parts de 100€
+100€ à la crétion si va mal part = 0, sinon part vaut 1000.
+
+parts socilaes dématérialisées inscrites sur un registre => les associés sont connus.
+
+on vous connait donc on ne peut les vendre sans le dire car c arnaquer l'acheteur.
+
+ça doit être déclaré, ce n'est pas une société anonyme.
+IL FAUT L'ACCORD DE la majorité des ASSCOciés POUR LA VENTE DE SES PARTS.
+
+vente possible à assendant descendant ou à autres associés.
+
+non responsable sur leur biens sauf si comportement générateur de la faillite
+gestion illégales avec pour effet la faillite, 
+- fautes de gestions inexcusable,
+patrimoine servira à indeminsier les fournisseurs/créancier.
+
+\subsection{EURL}
+gérant non salarié, pas d'action
+
+A retenir : ne pas être entreprenur individuel CREER UNE EURL  (1€ suffit)
+
+gros benef => choisir IS imp sur le sociétés
+petit bénef => choisir impot sur le revenu IR
+
+IS env 33%
+
+eurl : deposer un dossier au greffe du tribunal
+98\% des sociétée en france
+puis event créer
+
+
+\subsection{SA} société anaonyme
+
+SA = grosse boîte, peut être en SARL mais rare
+
+SA = gros camion ou cargo.
+
+propriétaire
+
+minimum 7 actionnaire
+
+capital social 37 0000
+la moitié tout de suite, solde à 5 ans) pas de versement de dividende tant que capital non versé
+
+augmentation de capital sur marché financier : millions puis miliard
+225000 en cas d'appel public à l'épargne
+
+dirigeants salariés.
+
+Action : fraction du capital de l'entreprise 37 000 € de cap = 3700 euros de 10€
+
+carnet à souche d'actions, vendable à n'importe quoi, au porteur
+société anonyme
+
+compte titre : la soiété ne sait pas quels sont ses actionnaires.
+
+si entrep cotée en bourse : 
+
+
+\subsubsection{direction}
+
+Asselblée generale des actionnaires : 1 fois par an
+ordinaire : décision à maj simple
+extraordinaire : aug de acpital, demenager entreprise
+mixte : ordi et extraordinaire
+
+chaque banque qui est actionnaires
+
+soit la banque
+soit les annonce légales
+aller sur le site internet de l'entreprise
+
+compte titre : actiion doivent être bloquées pour pouvoir voter
+action papier : venir avec ses actions
+
+
+nommer des administrateur : conseil d'admin  = député des actionnaire, porte parole des actionnaires
+conseil d'admin qui dirige l'entreprise, 1 voix = 1 action
+
+le CA : nomme le président chef du repr des actionnaire, incarne l'entreprise.
+une Sa est dirigée par un DG, le CA nomme le DG, 
+
+si le président est aussi directeur : PDG
+
+
+en dessous du PDG : DGA: dir general adjoint (Mr le Directeur Général)
+
+ci-dessus c'est le sys francais : 90\% en france
+
+sys français : mis en place par les nazi en france
+
+CA surveille le PDG
+\subsubsection{système allemand}
+
+conseil de surveillance composé deux type de personnes : administrateur qui surveillent le directoire (coach le pdg)
+second type : personnes "inutiles" mais obligé de prendre ces personnes lors de rachat d'entreprise etc(placard doré)
+directoire : sorte de PDG collectif
+
+le CdS surveille le Directoire : 
+
+Président du directoire: crypto PDG
+
+chacun a son domaine de compétence
+
+10\% sys allemand en France
+BNP, AIRBUS
+
+sys allemand plus démocratique : mis en placce en allemagne par la france.
+
+
+ex : mandataire social, signature engage l'entreprise (achat tour effel)
+
+un mandadtaire social : revocable ad nutum : sur un coup de menton, viré.sans indemnités, sans social.
+
+- demander un parachute (dorée) :  DG ou DGA nommé mandataire social, entreprise rachetée, viré, droit à rien
+on vient de remplacer la direction.
+
+au moins aussi bonne que situation salariées, perte de droit à la retraite,
+
+responsable sur ses biens propre, jeton de présence = paiement pour venir au CA
+
+créancier : fournisseur,  banque,
+
+verif de vigilance et si pas de preuve de vigilance : resp sur ses biens propres. 
+
+procès verbale : question et réponse     
+
+\subsection{SNC}
+
+
+deux associés minimum
+IS ou IR pour chaque associé
+resp sur ses biens 
+
+tout le monde est mandataire social, tout le monde est patron et associé gérant,
+resp des dossier qu'il amène.
+
+
+ATTENTION : avec solidarité = ex SNC 500 000 10 assoc 5 millions donc 10\% des parts
+10 millions de dette pas 1\% mais responsable sur l'ensemble.
+
+pas obligé de répartir la créance au prorata du nombre d'action.
+
+
+\subsection{SCA}
+
+Société en comandite par action
+
+deux type d'acrtionnaire : commandité dirige
+les commanditaires 1 million d'actions qui possèdent l'entreprise,
+mais ne peuvent voter.
+
+action de commodité : dividende plus cher
+
+permet au commandité de ne pas pouvoir être viré.
+
+
+le commandité est resp sur ses biens.
+le commanditaire ne perd que ses action si faillite.
+
+
+
+
+
+michelin, lagardère,  darty, eurodysney
+
+\subsection{SAS : société par action simplifiée}
+
+
+
+on fait ce qu'on veur en terme de statut.
+
+actionnaire privé
+
+forme souple : START UP
+
+plusieurs associé, action répartie
+
+ \subsubsection{SASU : société par action simplifiée unipersonnelle}
+
+si on a toutes les actions c'est une SASU, on peut être salarié,
+
+1€ de capital (eurl : petite boite non salarié)
+SASU : toutes les action, minimum smic avec charge 25000€/an
+
+
+\subsection{reseaux coopératif et mutualiste}
+
+10\% à but non lucratif
+
+
+
+banques : socité générale, et BNP capitaliste, les autres banques
+
+banques qui n'ont pas d'actionnaire en donne 
+
+cooppérative appartient aux fournisseur
+mutuelle : ap aux associés ?
+
+les mutuelles d'assurance, association qui sont en fait des entreprises pour certaines, 
+fondation pour faire hériter etc pas de droit de succession, 
+
+
+\subsection{LES SEUILS}
+traditionnellelbt : 25 20 15 10 5\%
+
+se déclarer si on dépasse un seuil : même si anonyme, si pas déclaré pas de vote
+
+airbus : capitalisation 60 milliards : 1\% d'airbus
+les trsè grandes entreprise demande de se déclarer à chaque 1\% 
+
+
+A 30\% : signe d'une montée e ncapital
+soupconner de vouloir dépasser 33\%
+
+seuil 1/3 + 1 action : 
+à 30\% il faut faire une OPA  :  porshe OPA sur volkswagen propose d'acheter à la moitié du prix
+
+prix sur la moyenne des dernier cours de bourse ou plus. il faut pouvoir payer
+ 
+OPA : proposer aux autres actionniare deracehter tourtes les actions donc être
+capable d'acheter les 70 restant.
+
+1/3 + 1 action : minorité de blocage
+
+à 40\% : présomption de controle.
+
+deux frere jumeau de la famille fondatrice : agissent de concert ou pacte d'actionnaire, 26\% chacun donc 52\%
+si on ne peut pas montrer qu'il y a plus gros on est considéré comme dirigeant : sanction si corruption, etc
+
+50\% + 1 action : on est le patron
+
+la premiere assemblée :  maj au 2/3 des actions
+la second maj au 2/3 des actions représentées (bonne partie des action qui ne votent pas)
+
+
+2/3 : on fait ce qu'on veut au 2/3 lors des assemblés extraordianire
+
+à 95\% : ne fait qu'un avec la société
+on peut sortir de la bourse, on fait ce qu'on veut
+
+on peut exproprié : on propose le rachat des 5\% si refus
+procédrue de retrait obligatoire
+
+PSA : proprio de 99\% de peugeot et citroen
+
+
+
+
+\section{LES GROUPES}
+
+société mère et des filiales.
+
+participation = actionniare non insignifiant.  1\% chez airbus
+donc 2\% d'airbus = participation. 
+
+insignifiant = placement
+
+95\%
+
+50 + 1 action = devient filiale
+
+partcipation croisée : les  deux socité possèdent des actions de l'autres
+un peu prorio de toi et toi de moi
+
+
+
+autocontrole : société qui possède toutes ses action
+mais entreprise ne peut s'appartenir, gens extérieur qu idécident
+donc autocontrole interdit mais il suffitr d'acchete des actions pour prendre.
+
+
+tolérance : à 10\%
+
+ex : fusion avec alitalia : 13\%  donc doit revendre et revenir e ndesoous de 10.
+
+augmentation de capital : salarié deviennt actionnaires à moitié pris.
+
+paie dirigeant avec action gratuites + un certain nbr d'action.
+100 000 €
+
+autocontrole inerdit mais à l'international : panama
+
+une société doit avoir un ou des proprio et ne peut s'appartenir 
+
+\subsubsection{Sociétés HOLDING} 
+
+société sans activité, son activité c d'être propriétaire holding (de holder des actions d'autres société)
+
+ex : PSA proprio d'action de peugeat et citroen.
+
+on ne peut prendre l'argent de citroen pour le donner à peugeot (sinon abus de biens sociaux)  mais PSA peut légalement recevoir l'argent de citroen pour le donner à peugeot
+
+
+exemple des 10 pétroliers, 3 paquebots, marée noire :
+
+pour éviter la saissie  de tous les bateaux.
+
+on crée 13 société HOLDING H1 à H13: basée dans des pays différents.
+H6 prorio de 1/13 des autres (portefeuille titre)
+ces H13 appartiennet à une Holdong superieure : HS
+
+un pétrolier coule avec marée voir, dégat 5 milliards.
+on perd 1/13 
+
+holding : sert à éviter les 
+sert à simplifier la gestion
+
+HS : installaer ds l'endroit le plus sûr : Hollande, fondation néerlandaise
+
+
+
+\subsubsection { Firme multinationale}
+
+multinationale américaine GTI:
+
+conseil d'administration
+
+ex : prod d'ecrans, pollutante ds un paradis écologique législation plus légère,
+main d'oeuvre, robotiser ou plus de main d'oeuvre ; mexique : paradis ecolo, 12h par jour.
+GTI mexique : cout de prod faible pour la filiale au mexique.
+
+cout de prod de 100\$ : vendue sur un gros marché en europe vendus à 300\$ cout de commerciallsiation donc 100\$ e marge
+au niveau GTI UE. cargot mexique vers rotterdam. GTI mexique vend ses écran à GTI caymants qui revend à GTI europe.
+
+mexique ce n'est pas un paradis fiscal sur 50€ de benef on paie 17 d'impot comme en europe.
+
+en fait GTI mexique vend à 101\$ (benef 1\% impot 30 cents impots)  cayamant vend 199\% (benef 98 euro, 30cents impot car paradis) et europe ()
+
+
+cyamant pas un paradis financier ; l'argent doit sortir des îles caymant ; ouverture d'un compte en suisse, paradis financier.  
+
+créer GTI CH (SUISSE) mais mieux vaut l'appeler autrement TOTO CH. crédit suisse ou UBS.
+exemple credit suisse zurich.
+
+bon placement, interets ça gonfle 20 milliards, ....
+
+gérée par une fiducie (trust)
+client de la fiducie : 
+
+construction d'un centre de recherche de trs haut niveau : centre de R\&D pour 5 milliards.
+
+possibilité d'autofinancer , on emprunte 5 milliards puisqu'on les a !
+
+tour des banques : consultation banques américaine proposent 5\% et étrangère, crédit suisse 
+
+cout du capital  , risque de non remboursement  mise à dispo de 5 milliards et cout du risque.
+
+nantissment : val mobiliere 
+hypothèque : val immobiliere
+
+garantie de 5 milliards => pas de risque
+propose du 4 mais on demande de payer du  5\%
+
+interet réduit de 250 millions de moins sur le benef
+mais avec les impot 170 millions et coute 80 million au contribuable de perte.
+
+50 millions reste car la banque demandait 4\%.
+
+que faire avec les 5 milliards : on les donne aux actionnaires en dividendes. 
+
+stoke option : action option payé 1 millions seulemnet + 1 million de stock option /an
+action 100\$  droit d'achat à acheter 1 million d'actions. droit pdt 5 ans à 100.
+
+dividende important : action monte, satisfait l'actionnaire
+tant que l'action monte les plus values (impot plus faible sur les plus value que saliare).
+
+2.5 milliards en dividende, monte car action bonne, donc on achete 2.5 milliards d'action pour les détruire.
+action annulées. benef par action monte monte et on fait monter le cours des actions.
+
+
+on pourrait créer GTI irlande qui rachète la marque GTI 10 milliards.
+
+on donne la moitie aux actionniares, la moitié en rachat d'action pour faire monter le cours.
+
+compte en suisse : tout virement interbancaire passe à un moment par la reserve fédérale.
+ex : du général, compte au crédit suisse 
+si dans la même banque, pas besoin de transfert de geneve à zurick, même HDD ordi, sans que ça se sache.
+car si transfert interbancaire, la reserve feferale americaine le sait ; donc pot de vin et prison.
+
+
+séparément les actions sont légales.
+
+multinationale peut choissir ou produire, ou détenir la marque, ou payer impot, ça change.
+
+ex :analogie du millepattes  : non de code ITT (GTI)  ATT filiale amériqiane.
+ITT allemagne : mersechmit 109, focke wulfe
+mersrchmitt : bombardé tous les jours
+
+focke wulfe n'a jamais été bombardé.
+
+fin année 60 : focke wulfe filiale ITT
+qui a pris la décision de ne pas bombarer focke wulfe.
+industrie chimique : BSAF, igué farber, fililae d'ITT.
+
+
+
+
+\section{PARTIE II : GESTION FINANCIERE}
+  ARGENT DUR 0 GAGNER et on en manque.
+  
+  a partir d'un certain niveau, trouver de l'argent est facile mais l'utiliser est un problème.
+  
+  si on a accès au marché financier, l'argent n'est plus un pb : il suffit de le demander ou de le créer
+  
+  
+ 
+ 3 sortes d'argent
+
+
+
+\begin{enumerate}
+	\item : capital et autofinancement : argent de la boite.
+	 argent qu'on a : le capital ; argent des actionniares donné à la création.
+	autofinancement : capa de la boite à faire des bénéfices pour s'autofinancer.
+	idée de rentabilité, on pense qu'elle va en gagner
+	\item crédit, argent emprunté :
+	\item augmentation de capital :100 000 100 actions à 100€
+	création pour 100 000 € d'action nouvelle.
+	si rentable, ça donne la possibiliter de se faire donner de l'argent en créant des actions.
+\end{enumerate}
+
+pébereau : fusion avec Paribas et BNP
+
+BNP : 100Milliard francs MF  1 milliard action à 100F
+PAribas : 110 MF   : 11 milliard à 10F
+
+
+augmentation de apital : 1.3 M d'action nouvelles.
+BNP  
+
+
+%\pagebreak
+OP : offre publique d'échange : OPE
+publicité : dire au actionniare de parisbas : contre action parisbas qui vaut 10 F
+on te propose 13 actions BNP 100 action paribas contre 13 BNP.
+payé avec les actions créées.
+
+BNP : agence partout, mais ne font pas les vrais riche.
+clients très aisés et grosses entreprises.
+
+parisbas : a les riche et les grosse boites.
+
+BNP annule 
+
+peberaux : BNP
+
+
+AOL petite entreprise et time warner énorme entreprise de divertissement 100 fois plus grosse.
+
+AOL : autorité des marchés financiers
+on peut zcheter qqch qui vaut 100 fois ce qu'on vaut qui n'est pas à vendre sans argent car possibilité d'émmetre des action.
+garder ou vendre les actions.
+entreprise doit être crédible
+
+OPA : faut payer
+OPA : amicale 
+
+OPA hostile se fait contre la volonté des dirigeants.
+
+OPA amicale : direction d'accord
+
+cours1 22 janvier 
+
+
+\subsection{ROE}
+retour sur fond propre = return on equity ROE
+fond propre pour entreprise = patriminoine pour un individu
+ 
+exemple : possède  5 millions + 4 millions à sa banque
+=> patrimoine de 1 million
+
+fond propre = ce qu'on possède moins les dettes.
+
+mais si on 5 millions on ne sais si ça a été emprunté
+
+equity = fond propres
+
+dette et fond propre ont permis d'acheté ce qui est à elle. les actifs
+
+30 de FP et 70 d'emprunt vaut 100.
+
+lingot d'or 35000 : pond un lingotin de 50g fin 2019
+
+Une entreprise vaut sa valeur plus les bénef fin 2019.
+
+fond propres
+
+
+bilan : à l'actif = ce que l'entreprsie posssède : marque, brevet, usine
+passif : fond propres, dettes.
+
+actionniaires : capital
+réserves : bénéfices actionnaire non pris sous forme de dividende.
+
+benef prend le 1/3 sur ce qui reste, 50\% dividende + 50 de réserve
+
+ce que les actinnaire aurait pu avoir et n'ont pas.
+
+exemple : entreprise trust tabac
+brevet, usines, plantation, marque
+
+pour faire cigarette, besoin être proprio pour 10 milliard
+gagne : 2 milliards/an benef
+pas d'investissment : ROE = 20\%
+
+
+décision benef mise en réserve, pas de dividende : donc en fin année suivante richesse
+entreprise 12 M, 2 M de tresorie en caisse, banquier 3\% d'interet
+
+=> 60 millions 
+
+en 2020 gagne 2 M egalement, on y touche pas 
+on met cet argent  4 M en banque qu irapprottent 120.
+
+on fait de meme pdt 5 ans.
+
+=> on passe à 20 M 60 120 160 180 240 300 millions en 2024.
+
+viré en 2024 car cours de bourse de l'entreprise s'est écroulé.
+
+l'actionnaire 1000 actions à 100€ et action à 40 => viré
+
+entreprise bcp plus riche mais plus viré.
+
+en 2025, nouveau PDG 1ere année
+assemblé générale, conf de presse : cette année on se préoccupe du ROE.
+on était à 20  avec benef 2 M avec 20M de fond propre  ROE 10\% = 2M/20M
+
+ROE baisse de moitié, cours à moitié voir plus donc 40 car bourse anticipe.
+
+changement : 1 - on distribue tous les benef aux actionnaire car pas besoin situation stable.
+=> dividende de 2M.
+
+entreprsie 10M d'actiif professionnel et 10 M à la banque : retrait 5M.
+
+2 - programme de rachat d'action par l'entreprise  (autocontrole <10\%)
+les action achetées et annulées pas de autocontrole. 
+à partir de début mars, 
+article jouranl : entreprise distribue 2 M : actionnaire 
+
+50millions par jour pdt, action monte fortement. et tout le monde le sait.
+action monte tout de suite avant même le programme d'achat.
+
+action va monter et gros dividende.
+action 60\$ puis 75.
+
+2026 : situation entreprise : 10 M d'actif pro et 5 M à la banque.
+il y a moins d'action actions annulées.
+
+gain de 2 M mais réparti sur moins d'action, dividende par action monte et dsitribué
+chaque action va toucher plus. l'actionnaire gagne plus sans faire plus de benef.
+
+on retire 5M à la banque ; achat action et annulées à partir du 1er mars.
+on est passé de 40 à 75 par action tous les jour achat 50millions d'action.
+
+actions monte à 88 dollards, puis 130 avec les achats.
+
+je le refairait dit il aux journaliste:
+
+20M de FP à 10 => ROE passe à 20
+
+on le refait mais en empruntant 5 M sur la base des 10M de la val de l'entreprise.
+
+5M de dettes et 10M de quoi produire => FP passe à 5M
+
+reu journaliste : l'entreprise gagne 2 M - frais financier de pret 4\%
+
+
+benefice 2M - 200millions => 1.8M  bcp moins d'actions
+
+benef par action augmenté de 20\%
+
+1.8/5 = ROE
+recommence à racheté monte 143 puis rachat d'action puis détruite 177 dollard.
+
+
+en 2028 : 
+
+benef 2M - 4\% sur les 5M et 4M à 5\%  => benef 1.6M nb acton plus faible donc au total
+benef par action monte  
+1.6/1 = ROE = 160\%
+   
+2M - ....................... 10\%     1.5M avec une seul action à 300 actions à valeur infini.
+
+ROE   cours explose
+ROE est l'efficacité financière de l'entreprise.
+
+1000 chevaux, pese 10kg    rapport poids puissance = ROE
+
+la valeur de l'entreprise à beaucoup baissé.
+General Motors : + grosse boite, usines nombreuses millions.
+
+harley davidson : même prix que GM
+
+porshe = wolswagen mais taille porshe bcp plus petite.
+actionnaire interesse par la valeur.
+
+quand vous avez 10+10 :
+attaque en justice plus interessante
+plus attractive pour les OPA.
+
+à la fin il n'y a plus rien à la banque et garanties de dessus de la banque.
+il n'y a plus rien.
+
+classe actions : grands proces communs, avocat se rémunère sur ce que ça rapport jusqua 2/3 des dommage interet.
+
+banque à preté neuf , il ne reste rien, rien à gagné, on n'est pas attaqués.
+
+1 - moins de tunes opa ou ope donc pas attaquable en valant bcp plus cher donc plus difficile à attaquer.
+
+on n'a plus un sous.
+
+achat cigaretier japonnais qui valent 10 ou 20M no problema.
+
+cigaretier 20M avec ROE bcp plus bas que ROE = 160.
+pirana psychopathe vs baleine hierarchique.
+
+OPE on echange des actions qui montent en actions stable; actionnaire d'accord.
+payé en action crédibles => on crée son moyen de paiement.
+
+anecdote : picasso et signature et restau.
+
+si tableau apprecie credible, un tableau de temsp en temsps
+
+idem avce les action qui peivent être créent sans limite.
+
+en travaillant le ROE, on crée son travail
+
+LE ROE est l'EPO de l'OPE.
+
+1.5M de benef - frais de crédit.
+
+creation d'actions : si action suff attractives, les fonds propres.
+
+c'est une nuisance d'avoir de la tune, car on n'en a pas l'utilité on peut aussi la créer. 
+
+magicien et la tonne d'or ; tout le monde sait que vous êtes magiciens.
+
+
+Tesla vaut plus cher que Ford.
+
+Microsoft 400 500M proprio de 400million
+facebook, apple pas proprio de gradn chose
+
++ important d'avir de la valeur que de la taille.
+
+
+une entreprise a tjrs besoin d'argent
+
+chauffeur de taxi : voiture cout permanent. crétion , dev, croissance externe
+
+\subsubsection{Création}
+création : 1€  plus une entreprise est capitalisée plus elle dure (correlation statisitique)
+
+trouver du capital : j'ai trouvé un million : kevin 100K, etc  etc 
+le banquier va preter. + garantie sur les actifs la banquier pretera au grand max
+1 m si capital million : en géneral 800K.
+
+Attention : risque de brevet antidaté et proces pour contrefaçon avec ruine à la clé car tout donner.
+
+\subsubsection{Développement}
+
+épicerie, superette, supermarché avec benef monte, se payer et croissance entreprise. 
+
+
+si SARL 4€ par personne pas crédible. 
+ 
+banquier finance un taux de croissance assez faible vitesse trop faible par rapport au marché.
+
+si on trouve un truc meetic etc si pas les moyen il y a copie et on est mort.
+
+banquier financer au départ ; 
+
+je sais tout ; 
+crise économique en france mais pas crise bancaire.
+
+croissance linéaire à chaque dent de scie négative on risque de couler.
+
+Il faut du vrai CApital, pas de l'emprunt, plus on a de capital moins on en a besoin.
+
+les entreprises meurent pdt la phase de croissantes, ecatombe, 
+celles qui survivent sont celles bien capitalisées au départ
+
+
+\subsubsection{affaires courantes}
+
+ex : jules parpain et garonne
+
+chaussures dans galerie leclerc : LECSHOES.
+
+atelier avec chaussure à réparer et le kangoo.
+
+3000€/mois
+
+payé à 60j
+
+contrat : 1er fev 3000/mois payé fin de mois
+
+1er fev payé le 28. pas de sous pour vivre.
+charge sociales, ....
+va voir le banquier : contrat avec leclerc.
+demande de pret de 3000 jusqu'au 28 fev.
+paie ses cotise, loyer, electricité et à la fin du mois
+3000 pour rembourser.
+
+emprunter sur plus long : 100€/mois d'economie remb sur 3 ans.
+
+décalage de paiement de un mois, 3ans
+
+FDR : somme dispo à long terme fait face à des dépenses à cours terme
+l'entreprise paie avant d'être payée. besoin d'un fond de roulement ici 3ans.
+
+
+si l'activité augmente paie 6000 par mois activité double.
+consommtion plus importante mais FDR double aussi donc emprunt plus.
+
+
+\subsubsection{croissance externe}
+croissance organique je grossis
+
+la croissance externe génére des besoins de financement.
+
+
+\subsubsection{pertes et restructuration}
+pertes dépenses > gain
+
+qd on fait des pertes, compte en banque négatif, même si terrain
+
+si on vie au dessus de ses moyens depesne plus que ce que vous gagnez. (chateau et jag)
+
+la perte apparit en 1er ds le cpt en banque
+
+restrucuté : produit ou outil de prod pas bon.
+
+airbus : usine pas au niveau ou avions pas ua niveau
+
+négocier le prêt quand tout va bien.
+
+plan de trésoreries utiles pour savoir qd négotier les prêts.
+
+plan de financement : sur une periode longue, pic d'investissement, financer par crédit.
+
+NE JAMAIS ALLER VOIR SON BANQUIER QUAND ON A BESOIN DE LUI.
+VOIR UN BANQUIER AU MOMENT OU ON LUI REND SON ARGENT.
+
+
+les actionnaires rentabilité présumée de l'entreprise qui génére le capital, avéré  l'autofinacement. 
+
+
+
+AUGMENTATION DE CAPITAL :
+amazon : tous les ans augmentation de capital.
+plus il vendait plus il perdait. bezos est le plus riche du monde.
+
+
+CREANCES CLIENTS / ENTREPRISES LIVRE MAIS NON PAYEES TOUT DE SUITE;
+
+\subsection{SOURCES DE FINANCEMENT}
+
+capital risque sort, capital developpement,
+
+pépinière, gros marché financier, scifox licorne, rdc le camping IoT vallee.
+
+\subsubsection{TERMES}
+ CT < 1 an
+ MT 3 4 5 ans
+ LT long terme immobilier
+
+
+credit moyen terme = credit equipement.
+
+credit court terme :
+
+escompte: credit particulier , escompte avec un taux bas
+on a vendu, regarde si clients solvables,
+
+credit de campagne
+
+je t'avance l'argent que les clients ne paient pas et si ne paient pas
+
+affacturage = escompte + assurance
+
+
+
+le découvert c'est l'autorisation d'avoir un compte en négatif
+dépendance : 
+accoutumance : tend à les augmenter
+
+si banquier retire le découvert on est mort.
+
+4 mois pour profiter de l'agonie
+
+
+LE REVOLVING POUR LES ENTREPRISE PLUTOT BIEN (POUR LES PARTICULIERS)
+2019 20 21
+
+SOMME FICTIVE R2SERVE VIRTUELLE 70k ;  COMPTE REVOLVING VERS COMPTE COURANT POUR PAYER LES FOURNISSEUR;
+ON PAIE DES INTERETS; D7S QU4ON EST PAYE 
+
+TAUX PLUS FAIBLE moins cher que le décuvert
+CONTRAT LONG TERME / NEGOCIER 0 L4AVANCE 
+on ne paie que ce qu'on consomme.
+
+
+Un stand-by : creit baquier meurt
+
+
+
+LEASING : 
+ex du tractopel : 1 million
+banquier pas ineressant
+
+aller voir une société de leasing.
+
+les tracto sont la proprité de la société de leasing. 100\%
+location pdt 5ans  cout 6m ou 7m en 5 ans
+
+si achat soit même 5m qui devront etre empruntés sur 5 ans
+
+sans 
+
+affacturage
+
+
+achat des 5 tractos rachete 500K soient utiles, soit les revendre.
+
+interet à ce que les tracto valent le plus cher.
+
+sûre que le materiel est 10\% de moins. la société de leasing achete 1000 tous les trimestres => rabais
+
+pour que ce soit rentable. le leasing est un bon moyen de tout ce qui vaut cher qu'on garde longtempqs.
+
+svt fialiales de banque.
+
+
+
+entreprise subvention et aides : activité pas rentable structurellement.
+
+plus rentable pour les passager et le contribuable qu'il soit subventionné.
+
+
+
+farines animales plus utilisée, cout pour les incinérer, un cimentier fours en permanance,
+
+
+\subsection{les marchés financiers} 
+
+225K versés cash pour presser sur la sonnette mais capital en millions ou plus.
+
+deux façons de se financer :
+ 1 - on émet des actions 
+ 2 - on émet de la dette
+ 
+ billet de tresorerie = dette 1j à 1an
+ BMTN : bon à moyen terme
+ 
+ entreprise duval remboursemtn 31/12/19 1\% minimum 150K
+ 
+ 
+ obligation : plus 2 5  10 ans
+%\input{intro_conclusion/conclusion}
+
+argent compte dev durable, assurance vie ... banque achete des billets de tresorerie.
+
+petit montant : billet de tresorerie, petis montant,  MARCHE MONETAIRE  (different du marché de change)
+billet de tresorie : 150K à 2m la majorité.
+billet de tres à 100m et 30ans possible mais rare.
+il faut autorisation d'emmetre : banque de france.
+
+un emprunt oblig 5 ans court
+10 ans bonne durée, 15 long
+
+50 ans pour l'état.
+
+EDF : 100 ans. 4 Milliards.
+on peut faire des oblig à 2 ans seulement.
+
+n emprunt obligataire taille normal 10 à 100m
+
+une OBLIGATOON = petite fraction d'un emprunt obligataires  1000€.
+
+pret sur 15 ans tout rembourser, 1\% emprunt obligataire, commission à la banque.
+
+
+4,7 Milliard, revendent le reste des obligations.
+
+100m d'emprunt edf, 30m de volkswagen.
+
+BCP MOINS CHER? REMBOURSEMENT IN FINE? PAS DE GARANTIE
+
+ASSURANCE TRESORERIES ENORME / ACHAT BILLET ET OBLIG PAR MILLIARDS;
+
+
+
+\subsubsection{Actions}
+vendues 
+
+augmentation de capital : cas entrep va bien : booster
+vaut 10M, 10m d'action à 100€. on double capital on crée 10m d'actions nouvelles.
+soit j'achete soit je vend mon droit d'acheter. je vend 5€ mon droit de souscrire actrionà 90€
+viens de toucher 900m rachat de renault nissan, au lieu de 1.9 va valoir 2.5 avec les economie.
+
+OPE : action proposées à BNP Paribas.
+
+
+cas entrep va mal : si on évite la faillite evite de perdre tout. moyen de sauvetage.
+action échangée.
+
+
+les actions ne sont pas remboursées masi se revendent.action monte ou baisse ça ne coute pas directement.
+peintre dont la côte baisse devra brader ses peinture.
+
+\subsubsection{BOURSE}
+intermediaire entre vendeur et acheteur.
+
+proposer l'achat et la vente, sûr qd on des action en bourse.
+
+Entreprises : CAC40 40 entreprise pahre  donne un indice de perf assez representatifs du marché français.
+
+Dow Jones : media grand public
+SNP500 : 
+NY stock exchange et le nasdac = bourse électronique
+
+bourse paris = euronext mais n'existe pas.
+
+tout se passe en cotation electronique sur ordinateur.
+euronext est une entrep de marché. appartient à ses actinnaire ds les 150e par action.
+
+euronext est européenne.
+action fr coté par euronext = bourse de paris
+
+euronext bruxelle, amsterdam, por + wall street.
+ 
+ 
+ PLATEFORMES
+ BATS
+ CHI-X : 2nd bourses 
+ TURQUOISE
+ 
+ ce sont des versions électronique avec moins de frais.
+ 
+ à wall street, à la criée dans manhattan.
+ ex : cote ford 17 1/4  
+ 17 3/4
+ 
+ remplcé par des plots avec des telecommandes
+ 
+ envoie des ordres et affiche des cours.
+ 
+ ce sont des humains qui font le prix.
+ 
+ 
+ 
+ 
+\subsection{Air France}
+
+
+\subsubsection{contrat à terme (CAT) : Gel du futur, gratuit, risque implicite bonne affaire disparait}
+kerozene = le sous jacent
+
+prix fixe echeance future
+1 million de barils à 50\$  echeance 02/2019
+
+en fev 2020, air france achetera son baril à 50 dollards quel que  soit le prix du baril eg 80 dollards.
+
+charge, personnel dividende
+sécuriser 
+
+vendeur de petrole à terme à 50 dol/baril jusqu'à fev 2020.
+
+total, je securise ma prod à 50 dol/baril. on fixe l'avenir.
+
+Assurance gratuite mais prix à implicte si en oct 2020 le petrole à 25 air france paie 50.
+
+air france répercute sur le prix du billet.
+risque concurrentiel si les autre compgnie sans CAT: assur de prix gratuite évite un risque.
+
+CAT sur divers sous-jacent :
+
+
+\subsection{Air bus}
+air bus : pb de \$  fabrique en € et vend en \$.
+
+on livre dans le futur
+
+
+air bus peut vendre de \$ à terme :
+si en 2001 pense être payé CA 50 Mds\$  (1€ = 1.13\$)
+
+euro à 1.60 puis 1.13 
+air bus vend à terme en  2021 50 mds de dollard à un cours = 1dol=0.87€.
+
+je fixe ma prod 
+
+action, devise, matiere 1ere : achetable à terme.
+
+  
+\subsection{ Option:protéger contre risque avec commission, garantie si ça tourne mal}
+  
+ option c un droit pas une obligation
+ 
+ CALL : droit d'achat le sous jacent (droit achaat baril à 50) jusqu'à date écheance.
+ PUT : droit de vente, 
+ droit d'exercice
+ paie une prime
+ 
+ \subparagraph{CALL}
+ 
+ se proterger de l hausse petrole mais aussi profiter de la baisse.
+ 
+ achete un CALL 50\$   PAYANT  jusqu'au 31/12/2020.
+ en 2020 le petrole vaut 150. on utilise le call pour acheter à 50.
+ 
+ 1er contrat à 28/02.2019 pour le 1er CALL option à fev 2019 coute bcp moins cher(3dol/baril) que le call à dec 2020(15dol/baril).
+ 
+ si petrole ne dépasse pas 55 pas de souci par hypothse proba de passer à + de 55 faible 0.8\$ ( 800 000\$ au lieu de 3 millions).
+ 
+ quel est le prix d'une optinon CALL prix d'exercice 60 on se grantit qu'on ne passe pas au dessus de 60 dans le mois suvant.
+ 
+ pour les dernier call deux ans après  on demandera peut être que 3\$.
+ 
+ 
+ calcul du prix des options value le prix Nobel.
+ 
+ mal protégé pour un prix elevé: si petrole diminue à 35 on n'utilise pas l'option et on achete à 35.
+ 
+ 
+ \subsubsection{PUT}
+ le PUT : droit de vente
+ 
+ 
+ droit de vendre 1\$=0.87€
+ 
+ si dollard baisse, benef en euro ne bouge pas
+ 
+ si dollard monte, je jette mon PUT et je convertit au prix du marché.
+ 
+ 
+ CAT : gratuit voyage en bus
+ OPTION : tres cher je roule en jag.
+ 
+ 
+ \subsubsection{choix entre CAT si risque probable et OPTIONS entreprise avec bcp de marge}
+
+
+AIR FRANCE : 
+déterminer la proba du risque 
+si on estime que 60\% petrole monte  20\% baisse  20\% reste constant.
+
+=> risque probable donc evidemment ON PREND un CAT gratuit.
+
+si proba de baisse : 60%   10 = ou 30 hausse
+
+- obligation de se protéger ds l'activité concernée
+- se protéger par option est tentant mais est ce que j'en ai les moyens.
+
+si marge élevees : HERMES, OR monte avec marge fabuleuse.
+si air france se protéger contre le risque par option, le benef est mangé d'entrée.
+
+
+si petrole baisse avec option gros benef, si petrole monte ou stagne on aura plus de benf car payé en options.
+
+
+importateur mustang, bon client paie les ford mustang au 31 dec achat 1000 30 000 dollar 30 mil de dollard?
+
+je suis concessionnaire je vend 1000 ford en euro payer charge.
+
+si le dollar
+
+risque dollar monte car risque d'affaire en euro, etc si le dollr à monté pour payer
+
+se protéger : acheter des dollar à terme ou vendre des 
+
+risque que dol monte, on achete 30 million dollard à terme au cours d'aujourdhui,
+
+36 m de dol on rend 30
+
+
+importateur : protégé par ooption car risque ed montée du dollar faible.
+interet à acheter un CALL dollar  87 cents euro, si dollar monte on achete à 87 (on se protège de la montée si on se trompe)
+si on a raison et dollard baisse, on est gagnat CALL jeté.
+
+
+cognac : exportateur de cognac paient à la fin de l'année
+prix me va, si le dolar baisse, c mauvais j'aurai moins, pas de benef
+si dollars monte fort benef.
+
+si protec à terme : 20 million de dollard tout de suite.
+je les vend maitenant à un prix donné quoi qu'il arrive j'amène.
+
+
+protection par option :utiliser les PUT sans obligation.
+
+se couvrir contre le risque:
+
+\subsubsection{speculation et couverture par CAT}
+1 - 
+j'ai la certitude que le petrole va monter à 100\$
+achat de petroele à terme : pas besoin d'avoir 100 000 euro  dépot de 5\% j'en achete 20 000 baril
+ds un mois je dois amener 2 millions. ce petrole je le vend au comptant.
+
+tout le petrole est vendu. vente au comptant 100 dol le baril qui me coute 50  donc 1 milloiopn de benef.
+
+même outil utiliser apr le spécualateur et par celui qui veut se couvrir, 
+réglementé , united air line achat du petrole à terme, 2008 crise financiere baril baisse et faillite united
+
+achetait bcp plus de petrole que necessaire. couvre sur 1 million et specule sur 1 million.
+
+2 - un CALL baril 50  coute 5 dol, 55 3.5 , 60 1 dol, 70 option à 10 centes de dollard,
+si le petrole monte à 100 on gagne 30 millions avec 100 000€. 
+
+CAT : si risque très probable.
+
+on specule contre l'inverse du risque auquel 
+je ne veux pas payer les options.
+
+
+\section{décision stratégique}
+
+on a besoin d'info pour prendre des décisions.
+
+prendre des décsion stratégique bonne mais personnlles mauvaise.
+
+eg : cas fillion qqch pas important devietn important ds un contexte donnée
+
+
+\subsection{Systèmes d'information}
+
+decision stratégique : poste trader la defense ou airbus.
+décision de gestion courante aussi importante que stratégique : choix carrierr ou aller en bus train avion.
+
+
+ex : perrier : vendu tres cher, prix alcol pas cher pour 19cl eau. element de mode.
+french paradox : mange gras + alcool ; le gersois graisse de canard et vin rouge.
+
+aux us, on utilise le perrier pur dilluer le sang dans de l'eau distilliée avec utilisation du perrier.
+
+resultat de mr smith, benzene. 
+analyse pico gramme de selenium, chrome, qt infifnitesiamle.
+qt de benzene infime.
+la faute à la procedure de nettoyage du filtre au benszene.
+
+sys d'info de gestion : info pour travailler mais ne marche pas,
+note de servcie, réunion du lundi, machine à café. surinformé donc sous informé.
+
+sur-informé: réunion du lundi
+
+ \subsubsection{Systeme d'information ouvert vs fermé}
+ 
+ fermé : mobile cas montauban balma
+ 
+ mais affecté dans le Nord,
+ info fermée, poste dans le sud, si veut garder l'employé n'informera pas ce dernier.
+ 
+ system ouvert: poids del hiérarchie : sys ouvert hierarchie pour aider
+ sys fermé : hierachie not good.
+ 
+ rumeurs : quand une entreprise est sujette aux rumeurs => solution ouvrir le sys d'information.
+ 
+ ex : mac do : proposer un journaliste, on vous ouvre la compta et budget rumeur de lombric.
+ 
+ compte achat sys d'appro. media convaincus que rumeur fausse donc rumeur lévée.
+ 
+ diadermine unilever, "entreprise satanique", logo  => changement de logo.
+ 
+ frapper par la rumeur : tjrs la démentir , mq qu'elle n'est pas crédible, oblige à l'ouverture.
+ 
+ 
+ 
+ 3 axes : 
+ 1 - info descendante, info descend bien
+ 2 - info ascendante remonte très mal : car mal synthétisée.
+ info qui remontent avec des imperfections.
+ 
+ 3 - info transversale :
+ 
+entreprise strucuté en blocs: admin, production, finance
+rivalité et rétention d'information pour géner les autres voire des fake news
+pour nuivre les
+ex : communiste peur de l'info transversale, 
+
+50 ans aux jeunes on ne lui donne pas l'info.
+on passe derrière. arranger le coup.
+
+=> casser les blocs, faire tourner une partie du personnel. mais pas évident, tâche
+de support à différend endroit. erasmus.
+
+très chronophage : de faire passer l'info via la voie hiérarchique .
+lourd, pas d'initiative 
+=> favoriser le transversal.
+
+\subsection{Pilotage de l'entreprise}
+
+fixation des objectifs
+choix et mise en oeuvre des moyens necessaire : dimensionnement.
+contrôle et régulation : la plupart controle trop ou trop peu. si flicage raidissement et le rendent bien, perte
+de temps, pas dirigeant mais flic. L'inverse : trop confiance aux autres et à soi même. si pas de flicage, 
+gens se sentent pas controlés. font ce qu'il veulent.
+
+
+\subsubsection{pilotage par erreur et retroaction }
+- : plutot bonne idée
+gerer comme j'ai tjrs fait, garer une voiture au bruit boom, quand ça ne marche pas on change,
+si problème on essai de le résoudre.gens qui connaissent leur métier mais non manager. épicerie familiale
+comme mac do => épicerie faillite. 
+gérer une netreprise petite avec croisssance faible ou nulle ; garer fiat 500 doucement parking sans probleme.
+la plutpaprt ça se fait comme ça. enfant TBS qui veut appliquer son savoir à l'entreprise familiale.
+
+
+
+
+-\subsubsection{pilotage par alerte} 
+Interpréter des signaux faibles avant que les conséquences qu'ils annoncent soient visibles.
+
+exemple : moet et chambon, amélioration des ventes, chiffre bon, produit qui a sa natioanlité.
+qd perte marché national perte du marché international export baisse.
+
+audi : 4 entreprises merdique, amélioration en allemagne et l'international suit.
+
+cognac : français ne buvaient plus de cognac, risqu de disparition.
+cognac relancer par des cocktail, cognac blanc.
+cinard et ricard
+
+
+rallye : 2nd virage à 2000tr/mn en 3eme.
+
+ferrari, lambo : gros compte tour 
+
+controle du produit, test en fin de chaine.
+
+en fin de chaine un moteur à un pb de fabrication : coute 1
+si voiture finie, test sur circuit, ça vibre + difficile diagnostiqué : coute 10
+si la voiture est chez le client : coute 100
+
+
+taux de défaut : 6 passe à 12  tournevis pneumatique pression pas assez, piece fournisseur, 
+explication donc ça va mais si pas de raison.
+
+2 - on demande le taux d'absentéisme : 4\%
+abs monte on donne la cause : neige, pandémie, sncf, gillet, coupe du monde.
+
+3 eme chiffres à demander : accident du travail
+
+=> conflit social majeur
+
+1 - malfaçons montent
+2 - mécontant de son sort : travail mal fait, gens pas contents.
+3 - détestent les cond de W, erruption cutanées, absenteisme
+4 - retourne la violence sur soi même : accidents voulu ou négligence sur soi même.
+
+annoncer : augmentation de salaires, journée de congé, remerciement => désarmement du conflit.
+
+en leur donnant 50 au lieu de 100, 2 jours de congés au lieu de +.
+mais le drh va voir qu'il y a eu augmentation, entreprise sociale, drh viré bein qu'il ait évité
+un ocnflit social majeur.
+
+on a utilisé les moyens de l'enterpsie pour régler un pb qui n'est pas apparu.
+
+instit en 1895, avec le ptit Adolphe. noie ds le lavabo. amélioré. 
+=> pilotage pa alerte, désamocer des pb, le danger désamorcer des pb 
+le seul à voir.  
+
+joke : poudre sur la voie ferree, poudre antielephant, ça n'arrive jamais
+
+gestionnaire:
+
+\subsubsection{pilotage par anticipation}
+
+bill gates,
+bezos, amazon
+
+hommes d'affaire qui ont un espèce de flash, ne s'apprend pas.
+
+occultisme fonctionne : en entreprise l'astrologie est utilisée,
+factures déclaré, conseil en entreprise, voyants, astrolgue.
+
+scandale : banque mondial prise sur l'utilisation d'astrologues pour savoir comment se comporte
+les marchés financiers. astro ds tous les journaux mais est lue même si on n'y croit pas.
+euro : date de naissance ascendant, signe astro.
+
+FMI : astro même raisonnement
+
+si bcp de gens croient à l'astro qui prévoient une baisse d'action.
+ds bcp de domaine, occultisme.
+
+
+\subsection{controle de gestion}
+
+
+\subsection{indicateur, tableau de bord}
+prof le + rentable de tbs bachelor et master tbs vache à lait.
+
+\subsection{compta analytique}
+dépenses pour commerciliser, pour vendre plus que prévu, vendu mais pas livraison.
+
+pourquoi je dépense plus, pourquoi objectifs trop élevés ou bas
+si équipe atteignent tjrs leur objectifs alros obj trop bas.
+jamais atteind : trop haut
+\subsection{Gestion budgétaire}
+
+ \subsection{LE SYSTEM DE DECISION}
+ 
+ 
+ \subsubsection{Origine}
+ ENTREprise familiale cotée en bourse
+ personne qui influence qu'il faut convaincre, DG influencable par le dir tech, le dir com baise prix,
+ le dir fi miser sur la rentabilté fi augmenter les amrges.
+ 
+ \subsubsection{pertinence de la décision} 
+ hollywood : cherchent à faire le max de profit
+ n'ont pas cru à la TV
+ 
+ il a fallu faire de la tv sans eux; décisions mauvaises.
+ 
+ nokia ne croyait pas l'écran tactile.
+ 
+ SKYTRAIN : avion londres NY à 250£ 
+ avion rempli à 100\% ouvre porte, q c plein on part, pas de reza, pas de city office.
+ pas de classe, pas service à bord.
+ ce qui marchait bien ; le fait de ne pa avoir repris le modèle classique.
+ 
+ succes s'est transformé en compagnie aérienne, toutes les compagnies ont mis leur meilleur a	vions, créneaux en face
+ et l'ont tué.  
+ ct comme prendre des antibio toute sa vie au motif que ça nous a gueri une fois.
+ 
+ \subsubsection{identification du problème}
+ 
+ pb résolu 
+  \subsubsection{DPO  : direction par objectif}
+
+  \subsubsection{ DPPO : direction particiepative par objectif}
+demande de participer aux objectis à atteindre
+ \subsubsection{DPE : direction par Exception}
+ 
+ très pratiqué : chef est là pour penser pas pour travailler.
+ 
+ consiste à dire, je te charge de ça tu m'appelle si pb.
+ 
+ voyage d'étude appel si exception : appel trop ou trop sûr de lui.
+ 3 suicides.
+ 
+ doloréan voiture : bonne voiture, install en irlande du nord, ça marche d'enfer
+ ça marche mais ne vend pas bcp de voiture, gentes au bresil, world compagnie.
+ trafic de drogue
+ 
+ \section{La stratégie}
+ 
+ plans stratégiques : programme, google strategie:organiser l'info du monde par la techno
+ 
+ stratégie : survivre, rentable, attractif avec prix bas, se démarquer de la concurrence apple : ne plus être
+ comparable, identiifer marchés peu concurrentiels.
+ 
+ adolphe : stratège adoré de manière sincère, à la fin de laguerre décision stratégique alors que pas d'armée
+ et personne ne lui disait, le pouvoir isole.
+ 
+ jm messier : voulait prendre le control d'internet.
+ 
+ finissent par croire à leur propre propagandes.
+ 
+ les stratèges perdent le contact avc le réel.
+ 
+ 
+ les axes stratégiques : 
+ 
+ options stratégique : 
+ externalisation etsou traitance,
+ croissance int/ou ext
+ dette ou pas
+ cotation en bourse
+ sensibilité au social : embaucher là où il y bcp de chomage.
+ 
+ 
+ 
+ 
+ 
+  
+%\pagebreak
+%\listoffigures
+%\pagebreak
+%\listoftables
+%\newpage
+%\appendix
+%\include{annexes/annexe_A}
+%\include{annexes/annexe_B}
+
+\newpage
+\nocite{*}  %affiche toutes les entrées du bib même celles qui ne sont pas citées.
+% cf.    http://www.tuteurs.ens.fr/logiciels/latex/bibtex.html
+% compilation en TROIS PHASE  bibtex traite un fichier *.aux mais bibtex mon_fichier comme bibtex mon_fichier.aux sont acceptés 
+% latex mon_fichier.tex
+% bibtex mon_fichier
+% latex mon_fichier.tex
+
+
+% \renewcommand{\bibname}{Toto}
+% ou
+%\renewcommand{\refname}{Bibliographie}
+% dans le préambule.
+%\bibliographystyle{alpha}
+%\bibliography{references}
+%\input{page-de-couverture/page_blanche}
+%\input{page-de-couverture/quatrieme-de-couv}
+\end{document}
